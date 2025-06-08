@@ -7,8 +7,8 @@ public class Main {
 		}
 
 		String command = args[0];
-		String fileName = "C:\\\\Users\\\\ronra\\\\Documents\\\\JavaCode\\\\helloWorld\\\\TaskData.txt";
-		String archives = "C:\\\\Users\\\\ronra\\\\Documents\\\\JavaCode\\\\helloWorld\\\\TaskDataArchive.txt";
+		String fileName = "C:\\Users\\ronra\\My Drive\\SharedFolder\\TaskData\\Tasks.txt";
+		String archives = "C:\\Users\\ronra\\My Drive\\SharedFolder\\TaskData\\TaskArchive.txt";
 
 		switch (command) {
 			case "list":
