@@ -67,7 +67,10 @@ public class Functions {
         while (pqIterator.hasNext()) {
             Task current = pqIterator.next();
             long daysLeft = ChronoUnit.DAYS.between(currentDate, current.due);
-            System.out.printf("%5d %20s %-5s %10s %-5s %10s\n", current.id, current.description, " ", current.due, " ", daysLeft + "d");
+            if (daysLeft == 0)
+                System.out.printf("%5d %20s %-5s %10s %-5s %10s\n", current.id, current.description, " ", current.due, " ",  "Today");
+            else
+                System.out.printf("%5d %20s %-5s %10s %-5s %10s\n", current.id, current.description, " ", current.due, " ", daysLeft + "d");
         }
     }
 
